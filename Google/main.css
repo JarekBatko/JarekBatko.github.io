@@ -169,7 +169,8 @@ body {
 footer {
 	background: #f2f2f2;
 	margin-top: 490px;
-	position: bottom:50px;
+	position: relative;
+	bottom:50px
 	
 }
 
