@@ -56,7 +56,6 @@ body {
 	padding: 20px 7px;
     display: inline-block;
 }
-
 .lista {
 	border: 1px solid rgb(240, 238, 238);
 	cursor: auto;
@@ -84,6 +83,7 @@ body {
 .lista .lista2 li.pogrubienie{
 	background-color: rgb(250, 246, 246);
 }
+
 
 .middle {
 	flex: 5; 
@@ -128,7 +128,9 @@ body {
 	opacity: .5;
 	position: absolute;
 }
-	
+.thin {
+	font-weight: 500;
+}	
 
 .middle1 .middle4 {
 	cursor: pointer;
