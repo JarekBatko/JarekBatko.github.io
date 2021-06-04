@@ -211,6 +211,17 @@
     </div>
 </body>
 <script>
+    var app = new Vue({
+    el: '#app',
+    data: {
+      cities_update: true,
+      cities: window.cities,
+      zmiana2: 0,
+      foc: true,
+      list_counter: -1,
+      selected_city: '',
+      googleSearch: '',
+      googleSearch_temp: '',
     },
 
 watch: {
