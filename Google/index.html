@@ -93,6 +93,14 @@
     <div class="searchResults">
 
         <p class="liczba_odniesien"> Około  18042000 wyników (0,21 s)</p>
+        <div class="cities">
+          <a class="link">Miasta zawierające "{{googleSearch}}":</a>
+          <ul>
+            <li v-for="city in filteredCities">
+              {{ city.name }}
+            </li>
+          </ul>
+        </div>
         <div class="odniesienie">
           <a class="link" href="#">www.wikipedia.org› wiki ›Kryptowaluta</a><button>▼</button>
           <h2><a href="#">Kryptowaluta - Wikipedia, wolna encyklopedia</a></h2>
@@ -203,17 +211,6 @@
     </div>
 </body>
 <script>
-  var app = new Vue({
-    el: '#app',
-    data: {
-      cities_update: true,
-      cities: window.cities,
-      zmiana2: 0,
-      foc: true,
-      list_counter: -1,
-      selected_city: '',
-      googleSearch: '',
-      googleSearch_temp: '',
     },
 
 watch: {
