@@ -24,11 +24,7 @@
                 <input @focus="foc" ref="first" v-model="googleSearch" type="text" class="middle2" v-on:keyup.down="downClick" v-on:keyup.up="upClick" v-on:keyup.enter="enterClick"/>
                 <div class="lista1"></div>
                 <div class="lista2">
-                  <ul v-for="(city, index) in filteredCities" v-on:click="update_input(city.name)">
-                  <li :class="{pogrubienie: index == list_counter}">
-                  <a v-on:click="choose(index)" v-html="boldCity(city)">{{ city }}</a>
-                  </li>
-                  </ul>
+                 
                 </div>
               </div>
                 <img src="Zdjecia/ikona3.png" class="middle3"/>
