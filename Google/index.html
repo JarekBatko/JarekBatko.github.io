@@ -21,7 +21,7 @@
           <img src="Zdjecia/napis.png" class="napis"><br><br>
             <div class="middle1">
               <div class = "lista">
-                <input ref="first" v-model="googleSearch" type="text" class="middle2"/>
+                <input @focus="foc" ref="first" v-model="googleSearch" type="text" class="middle2" v-on:keyup.down="downClick" v-on:keyup.up="upClick" v-on:keyup.enter="enterClick"/>
                 <div class="lista1"></div>
                 <div class="lista2">
                   <ul v-for="(city, index) in filteredCities" v-on:click="update_input(city.name)">
